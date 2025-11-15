@@ -4,8 +4,9 @@ project(NetoCheck)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(NetoCheck
-        catch_amalgamated.hpp
-        firstTask/ListNode.cpp
-#        firstTask/PositiveTests.cpp
-        firstTask/NegativeTests.cpp
+        dependencies/catch_amalgamated.hpp
+        dependencies/catch_amalgamated.cpp
+
+        ListNode.cpp
+        Tests.cpp
 )
